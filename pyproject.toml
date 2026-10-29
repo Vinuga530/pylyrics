@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylyrics"
+version = "1.0.0"
+description = "A minimal, aesthetic Python CLI lyrics printer with Unicode-aware typewriter animation and LRC support."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "PyLyrics Contributors" }
+]
+keywords = ["cli", "lyrics", "lrc", "terminal", "typography", "unicode", "sinhala"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Terminals",
+]
+dependencies = []
+
+[project.scripts]
+pylyrics = "pylyrics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pylyrics*"]
